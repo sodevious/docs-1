@@ -7,7 +7,7 @@ title: "Theming"
 Let’s start with your single post. Find this file:
 
 ```
-wp-content/themes/{timber-starter-theme}/views/single.twig
+wp-content/themes/{timber-starter-theme}/templates/single.twig
 ```
 
 Brilliant! Open it up.
@@ -111,7 +111,7 @@ For this demo, let’s assume that the name of the page is "All about Jared" (ma
 
 Compared to the earlier example of this page, we now have the `{% block headline %}` bit surrounding the `<h1>` and `<h2>`.
 
-To inject my custom bit of markup, I’m going to create a file called `single-all-about-jared.twig` in the `views` directory. The logic for which template should be selected is controlled in `single.php` but generally follows WordPress conventions on Template Hierarchy. Inside that file, all I need is:
+To inject my custom bit of markup, I’m going to create a file called `single-all-about-jared.twig` in the `templates` directory. The logic for which template should be selected is controlled in `single.php` but generally follows WordPress conventions on Template Hierarchy. Inside that file, all I need is:
 
 **single-all-about-jared.twig**
 
